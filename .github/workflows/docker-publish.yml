@@ -39,7 +39,7 @@ jobs:
           else
             TAG="latest"
           fi
-          echo "image=${IMAGE}:${TAG}" >> "$GITHUB_OUTPUT"
+          echo "image=penpublicreps/${IMAGE}:${TAG}" >> "$GITHUB_OUTPUT"
           echo "Image: ${IMAGE}:${TAG}"
 
       - name: Build image
